@@ -1,0 +1,14 @@
+#dashboard-header {
+    width: 100vw;
+    height: 12vh;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background-color: #57cc99;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    font-style: italic;
+}

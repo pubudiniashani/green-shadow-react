@@ -1,0 +1,32 @@
+.signup{
+    width: 450px;
+    height: 400px;
+    padding: 20px;
+    margin: auto;
+    position: absolute;
+    top: 150px;
+    left: 0;
+    right: 50px;
+    background-color:#c7f9cc;
+    border-radius: 10px;
+    box-shadow: 20px 15px 10px rgba(0, 0, 0, 0.2);
+}
+
+.signupbtn{
+    background-color: #57cc99;
+    color: white;
+    position: relative;
+    top: 50px;
+    bottom: 0;
+    left: 150px;
+    right: 0;
+    margin: auto;
+}
+
+.card.signup {
+
+    border-radius: 10px;
+    padding: 20px;
+    color: black;
+
+}
