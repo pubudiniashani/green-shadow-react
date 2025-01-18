@@ -8,6 +8,7 @@ import {Dashboard} from "./pages/Dashboard.tsx";
 
 import {RootLayout} from "./components/RootLayout.tsx";
 import {Field} from "./pages/Field.tsx";
+import {Crop} from "./pages/Crop.tsx";
 
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
       children : [
         { path : '/dashboard',element : <Dashboard/>},
         { path : '/field', element : <Field/>},
+        { path: '/crop', element:<Crop/>},
 
       ]
     } ,
