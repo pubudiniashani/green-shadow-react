@@ -5,6 +5,8 @@ import {Provider} from "react-redux";
 import {store} from "./store/Store.ts";
 import {SignupPage} from "./pages/Signup.tsx";
 import {Dashboard} from "./pages/Dashboard.tsx";
+
+import {RootLayout} from "./components/RootLayout.tsx";
 import {Field} from "./pages/Field.tsx";
 
 
@@ -19,14 +21,23 @@ function App() {
       path: "/signup",
       element: <SignupPage />,
     },
+    // {
+    //   path: "/dashboard",
+    //   element: <Dashboard />,
+    // },
+    // {
+    //   path: "/field",
+    //   element: <Field />,
+    // },
     {
-      path: "/dashboard",
-      element: <Dashboard />,
-    },
-    {
-      path: "/field",
-      element: <Field />,
-    },
+      path : '',
+      element : <RootLayout/>,
+      children : [
+        { path : '/dashboard',element : <Dashboard/>},
+        { path : '/field', element : <Field/>},
+
+      ]
+    } ,
 
   ]);
 
