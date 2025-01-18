@@ -4,6 +4,8 @@ import {LoginPage} from "./pages/Login.tsx";
 import {Provider} from "react-redux";
 import {store} from "./store/Store.ts";
 import {SignupPage} from "./pages/Signup.tsx";
+import {Dashboard} from "./pages/Dashboard.tsx";
+import {Field} from "./pages/Field.tsx";
 
 
 function App() {
@@ -17,6 +19,15 @@ function App() {
       path: "/signup",
       element: <SignupPage />,
     },
+    {
+      path: "/dashboard",
+      element: <Dashboard />,
+    },
+    {
+      path: "/field",
+      element: <Field />,
+    },
+
   ]);
 
   return (
