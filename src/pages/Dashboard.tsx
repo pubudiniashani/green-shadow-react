@@ -8,11 +8,11 @@ export function Dashboard() {
         <div className="min-h-screen bg-gray-100">
             <DashboardHeader/>
 
-            <div className="flex justify-center items-center pt-10">
+            <div className="flex justify-center items-center pt-10 ml-[70px]">
                 <NavigationBar/>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-10 pt-20">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-10 mt-16 ml-[70px]" >
                 <Card
                     image="assets/background.jpg"
                     title="Crops"

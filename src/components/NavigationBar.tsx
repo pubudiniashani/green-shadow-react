@@ -2,7 +2,7 @@ import "../assets/styles/NavigationBar.css"
 
 export function NavigationBar(){
     return (
-        <div className="sidebar fixed top-0 left-0">
+        <div className="sidebar fixed top-0 left-0 ">
             <h3><br/>Dashboard</h3>
             <ul className="nav flex-column">
                 <li className="nav-item">
