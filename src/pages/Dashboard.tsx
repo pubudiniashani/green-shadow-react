@@ -12,9 +12,9 @@ export function Dashboard() {
                 <NavigationBar/>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-10 mt-16 ml-[70px]" >
+            <div className="flex justify-center items-center pt-10 md:pl-20 mx-auto" >
                 <Card
-                    image="assets/background.jpg"
+                    image="{background.jpg}"
                     title="Crops"
                     text="The farm boasts a wide variety of crops, ranging from grains and vegetables to fruits."
                 />

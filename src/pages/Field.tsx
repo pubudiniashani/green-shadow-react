@@ -10,6 +10,9 @@ export function Field() {
                 <NavigationBar/>
             </div>
 
+            <div className="flex justify-center items-center pt-10 md:pl-20 mx-auto">
+                <h1>Hello</h1>
+            </div>
 
         </div>
     );
