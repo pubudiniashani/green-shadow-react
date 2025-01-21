@@ -1,3 +1,4 @@
+import "../assets/styles/Card.css"
 
 export function Card(props: {image: string; title: string; text: string}){
     return (
