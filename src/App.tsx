@@ -22,14 +22,7 @@ function App() {
       path: "/signup",
       element: <SignupPage />,
     },
-    // {
-    //   path: "/dashboard",
-    //   element: <Dashboard />,
-    // },
-    // {
-    //   path: "/field",
-    //   element: <Field />,
-    // },
+
     {
       path : '',
       element : <RootLayout/>,
