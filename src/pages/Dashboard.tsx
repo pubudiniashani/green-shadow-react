@@ -12,15 +12,15 @@ export function Dashboard() {
                 <NavigationBar/>
             </div>
 
-            <div className="flex justify-center items-center pt-10 md:pl-20 mx-auto" >
+            <div className="flex justify-center items-center pt-10 md:pl-20 mx-auto  ml-[150px]">
                 <Card
-                    image="{background.jpg}"
-                    title="Crops"
+                    image="background.jpg"
+                    title="Fields"
                     text="The farm boasts a wide variety of crops, ranging from grains and vegetables to fruits."
                 />
                 <Card
                     image="assets/background.jpg"
-                    title="Crops"
+                    title="Staff"
                     text="The farm boasts a wide variety of crops, ranging from grains and vegetables to fruits."
                 />
                 <Card
@@ -31,5 +31,5 @@ export function Dashboard() {
             </div>
         </div>
 
-            );
+    );
 }

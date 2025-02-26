@@ -9,6 +9,7 @@ import {Dashboard} from "./pages/Dashboard.tsx";
 import {RootLayout} from "./components/RootLayout.tsx";
 import {Field} from "./pages/Field.tsx";
 import {Crop} from "./pages/Crop.tsx";
+import {Staff} from "./pages/Staff.tsx";
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
         { path : '/dashboard',element : <Dashboard/>},
         { path : '/field', element : <Field/>},
         { path: '/crop', element:<Crop/>},
+        { path: '/staff', element:<Staff/>},
 
       ]
     } ,

@@ -13,8 +13,7 @@ export function Field() {
     const [name, setName] = useState("");
     const [location, setLocation] = useState("");
     const [extentSize, setExtentSize] = useState(0);
-    const [image1, setImage1] = useState("");
-    const [image2, setImage2] = useState("");
+
 
 
     const add = () => {
@@ -22,9 +21,7 @@ export function Field() {
         const newField = {
             name,
             location,
-            extentSize,
-            image1,
-            image2,
+            extentSize
         };
 
         // Dispatch the action to add the field
@@ -51,8 +48,7 @@ export function Field() {
                     setName={setName}
                     setLocation={setLocation}
                     setExtentSize={setExtentSize}
-                    setImage1={setImage1}
-                    setImage2={setImage2}
+
                 />
             </div>
 
