@@ -3,3 +3,14 @@
     margin: 0 auto;
 }
 
+/* Increase input field outline color */
+input {
+    border: 1px solid black !important;
+}
+
+/* Add focus effect with black outline */
+input:focus {
+    border-color: black !important;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    outline: none;
+}

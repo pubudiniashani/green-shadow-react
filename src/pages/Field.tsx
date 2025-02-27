@@ -41,17 +41,17 @@ export function Field() {
 
             <div className="flex flex-col justify-center items-center pt-10 md:pl-20 mx-auto">
                 <CardForm/>
-                <Button
-                    text="Add"
-                    onClick={add}
-                    styles="bg-blue-400 text-white font-bold py-2 px-4 rounded-md hover:bg-blue-600 active:bg-blue-700
-                focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 mt-4"
+                {/*<Button*/}
+                {/*    text="Submit"*/}
+                {/*    onClick={add}*/}
+                {/*    styles="bg-blue-400 text-white font-bold py-2 px-4 rounded-md hover:bg-blue-600 active:bg-blue-700*/}
+                {/*focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 mt-4"*/}
 
-                    setName={setName}
-                    setLocation={setLocation}
-                    setExtentSize={setExtentSize}
+                {/*    setName={setName}*/}
+                {/*    setLocation={setLocation}*/}
+                {/*    setExtentSize={setExtentSize}*/}
 
-                />
+                {/*/>*/}
             </div>
 
             <div className="mt-10 px-10 flex justify-center">
