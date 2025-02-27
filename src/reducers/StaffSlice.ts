@@ -23,7 +23,8 @@ const staffSlice = createSlice({
             state.staff =state.staff.filter((staff:Staff) => staff.email !== action.payload.email)
         }
 
-    }
+    },
+
 })
 
 export const {addStaff,updateStaff,deleteStaff} = staffSlice.actions;
