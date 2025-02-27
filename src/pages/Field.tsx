@@ -52,6 +52,30 @@ export function Field() {
                 />
             </div>
 
+            <div className="mt-10 px-10">
+                <h2 className="text-2xl font-semibold text-center mb-4">Field List</h2>
+                <div className="overflow-x-auto">
+                    <table className="min-w-full bg-white shadow-md rounded-lg overflow-hidden">
+                        <thead className="bg-blue-500 text-white">
+                        <tr>
+                            <th className="py-2 px-4 text-left">Name</th>
+                            <th className="py-2 px-4 text-left">Location</th>
+                            <th className="py-2 px-4 text-left">Extent Size</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {fields.map((field, index) => (
+                            <tr key={index} className="border-b hover:bg-gray-100">
+                                <td className="py-2 px-4">{field.name}</td>
+                                <td className="py-2 px-4">{field.location}</td>
+                                <td className="py-2 px-4">{field.extentSize}</td>
+                            </tr>
+                        ))}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
 
         </div>
     );

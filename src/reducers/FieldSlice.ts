@@ -5,7 +5,7 @@ const initialState={
 }
 
 const fieldSlice = createSlice({
-    name:'counter',
+    name:'field',
     initialState:initialState,
     reducers:{
         addField: (state, action)=>{
