@@ -7,13 +7,13 @@
     top: 150px;
     left: 0;
     right: 50px;
-    background-color:#c7f9cc;
+    background-color: #a3cef1;
     border-radius: 10px;
     box-shadow: 20px 15px 10px rgba(0, 0, 0, 0.2);
 }
 
 .btnlogin{
-    background-color: #57cc99;
+
     color: white;
     position: relative;
     top: 75px;
