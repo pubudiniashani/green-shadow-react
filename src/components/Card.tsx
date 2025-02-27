@@ -1,9 +1,9 @@
 import "../assets/styles/Card.css"
 
-export function Card(props: { image: string; title: string; text: string }) {
+export function Card(props: { title: string; text: string }) {
     return (
         <div className="max-w-sm rounded overflow-hidden shadow-lg bg-blue-50 hover:bg-blue-100 transition-colors duration-300">
-            <img className="w-full" src={props.image} alt={props.title} />
+            {/*<img className="w-full" src={props.image} alt={props.title} />*/}
             <div className="px-6 py-4">
                 <div className="font-bold text-xl mb-2 text-blue-800">{props.title}</div>
                 <p className="text-gray-700 text-base">

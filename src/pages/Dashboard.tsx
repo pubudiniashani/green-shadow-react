@@ -14,22 +14,37 @@ export function Dashboard() {
 
             <div className="flex justify-center items-center pt-10 md:pl-20 mx-auto  ml-[150px]">
                 <Card
-                    image="background.jpg"
                     title="Fields"
                     text="The farm boasts a wide variety of crops, ranging from grains and vegetables to fruits."
                 />
                 <Card
-                    image="assets/background.jpg"
                     title="Staff"
                     text="The farm boasts a wide variety of crops, ranging from grains and vegetables to fruits."
                 />
                 <Card
-                    image="assets/background.jpg"
                     title="Crops"
                     text="The farm boasts a wide variety of crops, ranging from grains and vegetables to fruits."
                 />
             </div>
-        </div>
 
-    );
-}
+            <div className="flex justify-center items-center pt-10 mx-auto gap-8 flex-wrap">
+                {/* First Bar Graph */}
+                <div className="bg-white rounded-lg shadow-md p-6 max-w-md w-full">
+                    <h3 className="text-lg font-semibold text-gray-800 mb-4 text-center">
+                        Crop Yield Over Time
+                    </h3>
+                    <img
+                        src="../assets/field.jpg"
+                        alt="Crop Yield Bar Graph"
+                        className="w-full"
+                    />
+                </div>
+
+            </div>
+
+
+            </div>
+
+
+            );
+            }
