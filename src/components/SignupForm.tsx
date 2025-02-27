@@ -2,7 +2,7 @@ import "../assets/styles/SignupForm.css"
 
 export function SignupForm() {
     return (
-        <div className="card signup">
+        <div className="card signup ">
             <div className="card-body">
                 <div className="mb-3">
                     <label htmlFor="email-signup" className="form-label">Email</label>
