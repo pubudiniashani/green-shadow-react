@@ -2,7 +2,7 @@ import {DashboardHeader} from "../components/DashboardHeader.tsx";
 import {NavigationBar} from "../components/NavigationBar.tsx";
 import {CardForm} from "../components/CardForm.tsx";
 import {Button} from "../components/Button.tsx";
-import {useDispatch} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import {useState} from "react";
 import {addField} from "../reducers/FieldSlice.ts";
 
@@ -13,6 +13,8 @@ export function Field() {
     const [name, setName] = useState("");
     const [location, setLocation] = useState("");
     const [extentSize, setExtentSize] = useState(0);
+
+    const fields = useSelector(state => state.field.field); // Correct state path
 
 
 
@@ -52,11 +54,10 @@ export function Field() {
                 />
             </div>
 
-            <div className="mt-10 px-10">
-                <h2 className="text-2xl font-semibold text-center mb-4">Field List</h2>
-                <div className="overflow-x-auto">
-                    <table className="min-w-full bg-white shadow-md rounded-lg overflow-hidden">
-                        <thead className="bg-blue-500 text-white">
+            <div className="mt-10 px-10 flex justify-center">
+                <div className="overflow-x-auto w-[60%]"> {/* Adjust width as needed */}
+                    <table className="w-full bg-white shadow-md rounded-lg overflow-hidden">
+                        <thead className="bg-blue-300 text-black">
                         <tr>
                             <th className="py-2 px-4 text-left">Name</th>
                             <th className="py-2 px-4 text-left">Location</th>
@@ -75,7 +76,6 @@ export function Field() {
                     </table>
                 </div>
             </div>
-
 
         </div>
     );
