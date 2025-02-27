@@ -26,5 +26,5 @@ const staffSlice = createSlice({
     }
 })
 
-export const {addStaff} = staffSlice.actions;
+export const {addStaff,updateStaff,deleteStaff} = staffSlice.actions;
 export default staffSlice.reducer;

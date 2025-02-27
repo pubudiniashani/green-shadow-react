@@ -1,9 +1,51 @@
 import {DashboardHeader} from "../components/DashboardHeader.tsx";
 import {NavigationBar} from "../components/NavigationBar.tsx";
+import {useDispatch, useSelector} from "react-redux";
+import {useState} from "react";
+import {addStaff, deleteStaff, updateStaff} from "../reducers/StaffSlice.ts";
 
 
 
 export function Staff() {
+
+    const dispatch = useDispatch();
+    const staffList = useSelector((state) => state.staff.staffs);
+
+    const [staffData, setStaffData] = useState({
+        id: "",
+        firstName: "",
+        lastName: "",
+        gender: "",
+        email: "",
+        address: "",
+        contact: "",
+        fieldId: ""
+    });
+
+    const handleChange = (e) => {
+        setStaffData({ ...staffData, [e.target.id]: e.target.value });
+    };
+
+    const handleSubmit = () => {
+        dispatch(addStaff({ ...staffData, id: Date.now().toString() }));
+        setStaffData({ id: "", firstName: "", lastName: "", gender: "", email: "", address: "", contact: "", fieldId: "" });
+    };
+
+    const handleUpdate = () => {
+        dispatch( updateStaff(staffData));
+        setStaffData({ id: "", firstName: "", lastName: "", gender: "", email: "", address: "", contact: "", fieldId: "" });
+    };
+
+    const handleDelete = (id) => {
+        dispatch(deleteStaff(id));
+    };
+
+    const handleEdit = (staff) => {
+        setStaffData(staff);
+    };
+
+
+
     return (
         <div className="min-h-screen bg-gray-100">
             <DashboardHeader/>
